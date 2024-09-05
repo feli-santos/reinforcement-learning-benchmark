@@ -1,0 +1,42 @@
+{
+    "train_experiments": [
+        {
+            "algorithm": "ppo",
+            "environment": "LunarLander-v2",
+            "total_timesteps": 100000,
+            "model_save_path": "models/ppo_lunar_lander",
+            "log_path": "logs/ppo_lunar_lander"
+        },
+        {
+            "algorithm": "dqn",
+            "environment": "LunarLander-v2",
+            "total_timesteps": 100000,
+            "model_save_path": "models/dqn_lunar_lander",
+            "log_path": "logs/dqn_lunar_lander"
+        },
+        {
+            "algorithm": "a2c",
+            "environment": "LunarLander-v2",
+            "total_timesteps": 100000,
+            "model_save_path": "models/a2c_lunar_lander",
+            "log_path": "logs/a2c_lunar_lander"
+        }
+    ],
+    "evaluate_experiments": [
+        {
+            "algorithm": "ppo",
+            "environment": "LunarLander-v2",
+            "model_save_path": "models/ppo_lunar_lander"
+        },
+        {
+            "algorithm": "dqn",
+            "environment": "LunarLander-v2",
+            "model_save_path": "models/dqn_lunar_lander"
+        },
+        {
+            "algorithm": "a2c",
+            "environment": "LunarLander-v2",
+            "model_save_path": "models/a2c_lunar_lander"
+        }
+    ]
+}
